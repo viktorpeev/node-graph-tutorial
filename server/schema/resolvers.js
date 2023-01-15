@@ -15,8 +15,8 @@ const resolvers = {
             return MovieList;
         },
         movie: (parent,args)=>{
-            const yearOfPublication= args.yearOfPublication;
-            const movie = _.find(MovieList,{yearOfPublication:Number(yearOfPublication)})
+            const name= args.name;
+            const movie = _.find(MovieList,{name:name})
             return movie;
         }
     },

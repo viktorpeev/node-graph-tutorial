@@ -49,7 +49,7 @@ const typeDefs = gql`
         users:[User!]!
         user(id:ID!):User!
         movies:[Movies!]!
-        movie(yearOfPublication:Int!):Movies!
+        movie(name:String!):Movies!
     }
 `
 module.exports = { typeDefs };
